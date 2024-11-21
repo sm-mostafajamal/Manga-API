@@ -13,6 +13,6 @@ app.use("/api/manga", mangaRouter)
 app.use("/api/mangaList", mangaListRouter)
 app.use("/api/search", mangaSearch)
 
-app.listen(process.env.PORT, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log(`Server Start On Port ${process.env.PORT} 🎉✨ `)
 })
